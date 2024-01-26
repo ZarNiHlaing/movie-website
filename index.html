@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    
+  </head>
+  <body>
+    <header>
+      <div class="nav mx-5">
+        <a href="#" class="logo"><i class="bx bx-movie"></i> My Channel</a>
+        <ul class="nav">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#movies">Movies</a></li>
+          <li><a href="#coming">Coming</a></li>
+          <li><a href="#footer">Link</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+    <div>
+        <button class="btn btn-outline-success">
+          search
+          <i class="bg-green bx bx-search"></i>
+        </button>
+        <a href="#" onclick="document.getElementById('id01').style.display='block'" class="btn btn-danger">Sign In</a>
+      </div>
+    </header>
+
+  <div class="home" id="home">
+      <div class="containers">
+        <img       
+          src="./img/alex-litvin-MAYsdoYpGuk-unsplash.jpg"
+          alt=""
+        />
+        <div class="home-text">
+          <span>Movie Universe</span>
+          <h1>Veno <br />My Universe</h1>
+          <a href="#">Watch Now</a>
+          <a href="#" class="btn btn-danger"
+            >Play <i class="bx bx-play-circle"></i
+          ></a>
+        </div>
+      </div>
+  </div>
+
+  <!-- opening section -->
+    <section class="movies" id="movies">
+        <h2 class="heading">Opening This Week</h2>
+        <div class="movie-container">
+          <div class="box">
+            <div class="box-img">
+              <img src="./img/5 animés à voir avant de partir au Japon.jpg" alt="">
+            </div>
+            <h3>Your Name</h3><span>120min/ Action</span>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="./img/66 New Movies And TV Shows To Be Really Excited About In 2014.jpg" alt="">
+            </div>
+            <h3>FIO Stars</h3><span>120min/ Action</span>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="./img/98c08e8e-3905-4b85-a93a-826073479a97.jpg" alt="">
+            </div>
+            <h3>Me Before You</h3><span>120min/ Action</span>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="./img/b055311f-76e7-41ac-803c-8140e4477388.jpg" alt="">
+            </div>
+            <h3>
+              Ratatoiourlle
+            </h3><span>120min/ Action</span>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="./img/Books are better, I'll admit, but I still love the… (1).jpg" alt="">
+            </div>
+            <h3>Twilight</h3><span>120min/ Action</span>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="./img/Cinco tramas que no incluyeron en Game of Thrones y que son cruciales en los libros.jpg" alt="">
+            </div>
+            <h3>GOT</h3><span>120min/ Action</span>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="./img/Todas las cosas maravillosas que añadieron las películas de Harry Potter y todas las cosas que no deberían haber añadido.jpg" alt="">
+            </div>
+            <h3>Harry Potter</h3><span>120min/ Action</span>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="./img/Dibujos para colorear y pintar gratis de Frozen 2 de Disney.jpg" alt="">
+            </div>
+            <h3>Frozens</h3><span>120min/ Action</span>
+          </div>
+        </div>
+    </section>
+
+    <!-- comming soon -->
+    <section class="movies" id="coming">
+      <h2 class="heading">Coming Soon......</h2>
+      <div class="movie-container">
+        <div class="box">
+          <div class="box-img">
+            <img src="./img/Forever My Girl.jpg" alt="">
+          </div>
+          <h3>Forever My Girl</h3><span>120min/ Action</span>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="./img/The Shawshank Redemption (Os Condenados de….jpg" alt="">
+          </div>
+          <h3>ShawShank</h3><span>120min/ Action</span>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="./img/If Your Life Was An Animated Disney Movie, Which One Would It Be_.jpg" alt="">
+          </div>
+          <h3>Mulan</h3><span>120min/ Action</span>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="./img/Top 10 Best Anime Movies.jpg" alt="">
+          </div>
+          <h3>
+           A Silent Voice
+          </h3><span>120min/ Action</span>
+        </div>
+        
+      </div>
+  </section>
+
+  <!-- message section -->
+  <section class="contact" id="contact">
+    <h2 >Contact Us</h2>
+    <form action="#">
+      <input type="email" class="email" placeholder="Enter your email " required>
+      <input type="submit" value="Send" class="btn btn-danger" >
+    </form>
+  </section>
+
+  <!-- footer -->
+  <section class="footer">
+    <a href="#" class="logo"><i class="bx bx-movie"></i> My Channel</a>
+    <div class="social">
+      <a href="#" class="logo"><i class='bx bxl-facebook-circle'></i> </a>
+      <a href="#" class="logo"><i class='bx bxl-twitter'></i> </a>
+      <a href="#" class="logo"><i class='bx bxl-instagram'></i> </a>
+      <a href="#" class="logo"><i class='bx bxl-tiktok'></i> </a>
+    </div>
+  </section>
+  <section class="bar">
+    <p>@Copyright | Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+  </section>
+
+  <!-- login -->
+  <div id="id01" class="modal">  
+    <form class="modal-content animate"  method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="./img/undraw_sign_up_n6im.svg" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="contain">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit" class='login' >Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> <span class="remember">Remember me</span>
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  
+      
+  <script src="./app.js"></script>
+  </body>
+</html>

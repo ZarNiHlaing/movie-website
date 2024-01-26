@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,100;1,300;1,400;1,500;1,600&display=swap");
+* {
+  /* background-color: black; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* custom scrollbar */
+html::-webkit-scrollbar {
+  width: 2px;
+  background-color: var(--bg-color);
+}
+
+html::-webkit-scrollbar-thumb {
+  background:gray;
+  border-radius: 5rem;
+}
+
+/* Global color */
+:root {
+  --main-color: red;
+  --text-color: #fff;
+  --bg-color: #020307;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+header {
+  width: 100%;
+  /* height: 400px; */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px;
+  transition: 0.5s;
+  background-color:  black;
+
+}
+.nav {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  text-decoration: none;
+
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.5s;
+}
+
+.nav a:hover::after,
+.nav .active::after {
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo i,
+.btn {
+  margin-right: 5px;
+}
+.btn:hover{
+  background-color: rgb(121, 41, 41);
+}
+
+.containers{
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+ 
+}
+.containers img{
+ position: absolute;
+ width: 100%;
+ height:800px;
+ object-fit: cover;
+ object-position: center;
+ z-index: -1;
+}
+.home-text{
+  padding-left: 150px;
+}
+.home-text span{
+  color: var(--text-color);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.home-text h1{
+  color: var(--text-color);
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+.heading{
+  max-width: 800px;
+  margin-top: 5rem; 
+  margin: 10px auto 10px auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--main-color);
+}
+.movie-container{
+  display: grid;
+  margin: 0px auto 0px auto;
+  /* grid-template-columns: auto auto auto  auto; */
+  grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+  max-width: 960px;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.box .box-img{
+  width: 100%;
+  height: 270px;
+ 
+}
+.box .box-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+  transition: 0.5s;
+  box-shadow: 10px 10px 10px #fefefe02;
+}
+
+.box .box-img h3{
+  margin-top: 2rem;
+}
+
+.box .box-img img:hover{
+  transform: translateY(-10px);
+  filter: brightness(1.1);
+}
+.contact{
+  max-width: 958px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.contact h2{
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.contact form{
+  background-color: var(--text-color);
+  padding: 10px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email{
+  border: none;
+  outline: none;
+  width: 200px;
+  background-color: var(--text-color);
+}
+
+.footer{
+  max-width: 968px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px ;
+}
+.social{
+  display: flex;
+  gap: 0.5rem;
+}
+.social .bx{
+  background-color: var(--main-color);
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 2rem;
+  border: 4px solid rgb(2, 3, 7, 0.4);
+  color: var(--text-color);
+  transition: 0.5s;
+}
+.social .bx:hover{
+  filter: brightness(1.4);
+}
+.bar{
+  background-color: gray;
+  color: black;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+@media (max-width:1080px) {
+  .home-text span {
+    padding: opx 100px;
+  
+  }
+}
+
+@media (max-width: 370px) {
+  header {
+   z-index: -1;
+  
+  }
+}
+
+@media (max-width:640px) {
+ .home img {
+  margin-top: 0px;
+  padding-top: 0px;
+  color: 0;
+  }
+}
+
+ @media (max-width:470px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  
+  }
+
+  .contact form .email{
+   width: auto;
+  }
+.bar{
+  padding: 0px 20px;
+  font-size: 15px;
+}
+}
+
+
+
+@media (max-width:991px) {
+  .home-text h1{
+ font-size: 3rem;
+  } 
+    .home-text{
+      padding: 0 4%;
+    }
+
+   selection{
+    padding: 20px 0px;
+   }
+ 
+}
+
+@media (max-width:270px) {
+  header{
+    padding: 6px 40px;
+  }
+  header .logo{
+    font-size: 14px;
+  }
+  /* header .btn{
+ padding: 0.4rem;
+
+  } */
+  .home-text h1{
+    font-size: 1.7rem;
+  }
+  /* .movie-container{
+    grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+  } */
+}
+
+@media (max-width:900px) {
+  /* header{
+    padding: 12px 4%;
+  } */
+  .nav {
+   display: none;  
+  }
+  .home-text h1{
+    font-size: 2rem;
+     }
+     .btn{
+      padding: o.6rem 1.2rem;
+     } 
+  .footer{
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width:803px) {
+  .home {
+   height: 430px;
+
+  } 
+}
+
+@media (max-width:370px) {
+  header {
+   height: 430px;
+
+  } 
+
+}
+
+
+
+/* login */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+ 
+}
+
+img.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.contain {
+  padding: 10px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  color: var(--bg-color);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 400px; /* Full width */
+  height: 800px; /* Full height */
+  overflow: auto; 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  margin-left: 500px;
+}
+
+.login{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.remember{
+  color: var(--bg-color);
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
